@@ -5,8 +5,6 @@
   "main": "index.js",
   "homepage": "http://kampel6263.github.io/test-task-product-list",
   "scripts": {
-    "predeploy": "npm run build:dev",
-    "deploy": "gh-pages -d build:dev",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:local": "cross-env NODE_ENV=local webpack serve --mode=development --config webpack.dev.js",
     "start:dev": "cross-env NODE_ENV=dev webpack serve --mode=development --config webpack.dev.js",
@@ -16,7 +14,9 @@
     "update:module:paths": "node ./scripts/update-module-paths.js",
     "http-server": "http-server build",
     "eslint": "eslint --fix \"./src/**/*.{ts,tsx}\"",
-    "stylelint": "npx stylelint --fix \"**/*.scss\" && prettier --write \"./src/**/*.scss\""
+    "stylelint": "npx stylelint --fix \"**/*.scss\" && prettier --write \"./src/**/*.scss\"",
+    "predeploy": "npm run build:dev",
+    "deploy": "gh-pages -d build:dev"
   },
   "author": "",
   "license": "ISC",
