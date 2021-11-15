@@ -1,0 +1,24 @@
+@import 'core.scss';
+
+.container {
+  @include flex();
+}
+
+.radio {
+  width: 16px;
+  height: 16px;
+  border: 1px solid black;
+  border-radius: 100%;
+
+  @include flex(center, center);
+
+  &__error {
+  }
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 100%;
+}

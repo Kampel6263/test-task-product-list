@@ -1,0 +1,23 @@
+{
+  "presets": [
+    "airbnb",
+    "@babel/preset-env",
+    "@babel/preset-typescript",
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-transform-typescript",
+    "@babel/plugin-transform-runtime",
+    "transform-remove-debugger",
+    "minify-dead-code-elimination",
+    "minify-simplify",
+    "transform-minify-booleans",
+    "transform-merge-sibling-variables",
+    "@babel/plugin-transform-react-constant-elements",
+    "@babel/plugin-proposal-export-namespace-from",
+    "@babel/plugin-transform-react-jsx-compat",
+    "@babel/plugin-transform-react-jsx-self",
+    ["transform-remove-console", { "exclude": ["error", "warn"] }]
+  ]
+}

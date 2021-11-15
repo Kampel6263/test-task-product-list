@@ -1,0 +1,85 @@
+{
+  "Print saga shape": {
+    "scope": "javascript,typescript",
+    "prefix": "saga",
+    "body": [
+      "/**",
+      "* @author",
+      "* $2",
+      "*/",
+      "@Saga(${1:TypeActionName})",
+      "public *${1:TypeActionName}(payload: Payload<typeof ${1:TypeActionName}>, { api }: SagasContext) {",
+      "  try {",
+      "  } catch (error) {}",
+      " }"
+    ],
+    "description": "Creates saga worker/watcher"
+  },
+  "Print preloader start": {
+    "scope": "javascript,typescript",
+    "prefix": "pstart",
+    "body": ["yield put(preloaderStart(Preloaders.$2));"],
+    "description": "Preloader start"
+  },
+  "Print preloader stop": {
+    "scope": "javascript,typescript",
+    "prefix": "pstop",
+    "body": ["yield put(preloaderStop(Preloaders.$2));"],
+    "description": "Preloader stop"
+  },
+  "Print service init": {
+    "scope": "javascript,typescript",
+    "prefix": "service_init",
+    "body": [
+      "class ${1:TypeServiceName} {",
+      "/**",
+      "* @author",
+      "* Init",
+      "*/",
+      "public constructor(private http: HttpService) {}",
+      "}",
+      "export { ${1:TypeServiceName} }"
+    ],
+    "description": "Default service initialization"
+  },
+  "Print service request": {
+    "scope": "javascript,typescript",
+    "prefix": "service_request",
+    "body": [
+      "/**",
+      "* @author",
+      "*",
+      "*/",
+      "public ${1:request} = () =>",
+      "this.http.request({",
+      "method: 'GET',",
+      "url: `/in-progress`",
+      "});"
+    ],
+    "description": "Regular service request function"
+  },
+  "Print component hook": {
+    "scope": "javascript,typescript",
+    "prefix": "chook",
+    "body": [
+      "import { useDispatch, useSelector } from  'react-redux'",
+      "import { useEffect } from 'react'",
+      "/**",
+      "* @author",
+      "*",
+      "*/",
+      "const ${1:TypeHookName} = () => {",
+      "const dispatch = useDispatch()",
+      "const {} = useSelector((state: State) => state);",
+      "",
+      "useEffect(() => {",
+      "// dispatch(action());",
+      "}, [])",
+      "return { };",
+      "};",
+      "",
+      "export { ${1:TypeHookName} }"
+    ],
+    "description": "Component hook"
+  }
+}

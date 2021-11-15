@@ -1,0 +1,24 @@
+@import 'core.scss';
+
+.container {
+  @include flex();
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  border: 1px solid black;
+  cursor: pointer;
+
+  @include flex($align: center, $justify: center);
+
+  &__active {
+  }
+
+  &__erorr {
+  }
+}
+
+.icon {
+  width: 16px;
+}

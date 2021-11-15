@@ -1,0 +1,20 @@
+@import 'core.scss';
+
+.options {
+  position: relative;
+}
+
+.input-container {
+  @include flex($align: center, $justify: center);
+}
+
+.dropdown-container {
+  position: absolute;
+  top: 26px;
+  border: 1px solid black;
+  width: 100%;
+}
+
+.label {
+  cursor: pointer;
+}

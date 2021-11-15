@@ -1,0 +1,51 @@
+@import './normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 40px;
+
+  input {
+    padding: 7px 15px;
+    outline: none;
+    border: none;
+    background: rgb(252, 246, 220);
+    border-radius: 5px;
+    width: 100%;
+  }
+}
+
+button {
+  background: rgb(135, 199, 135);
+  color: #fff;
+  border: none;
+  height: fit-content;
+  padding: 7px 12px;
+  border-radius: 6px;
+  transition: 0.1s;
+  cursor: pointer;
+  // width: fit-content;
+
+  &:hover {
+    background: rgb(168, 226, 168);
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["react", "@typescript-eslint"],
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "airbnb-typescript",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript"
+  ],
+  "parserOptions": {
+    "project": "tsconfig.json",
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/comma-dangle": "off",
+    "@typescript-eslint/no-unused-vars": ["warn"],
+    "no-param-reassign": ["error", { "props": false }],
+    "generator-star-spacing": ["error", { "before": true, "after": false }],
+    "react-hooks/exhaustive-deps": "off",
+    "import/prefer-default-export": "off",
+    "react/jsx-fragments": "off",
+    "react/prop-types": "off",
+    "no-console": "off",
+    "jsx-quotes": "off",
+    "class-methods-use-this": "off",
+    "no-unused-vars": "warn",
+    "consistent-return": "off",
+    "comma-dangle": ["error", "never"],
+    "implicit-arrow-linebreak": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "operator-linebreak": ["error", "none"],
+    "prettier/prettier": [
+      "warn",
+      {
+        "usePrettierrc": true
+      }
+    ],
+    "max-len": ["error", { "code": 130, "ignoreUrls": true }],
+    "react/jsx-props-no-spreading": "off",
+    "indent": "off",
+    "@typescript-eslint/indent": ["off"]
+  },
+  "ignorePatterns": [
+    "webpack.dev.js",
+    "env.js",
+    "webpack.prod.js",
+    "webpack.common.js",
+    "stylelint.config.js",
+    "postcss.config.js",
+    "*.scss",
+    "*.css",
+    "src/public/**"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

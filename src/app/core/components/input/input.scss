@@ -1,0 +1,37 @@
+@import 'core.scss';
+
+.input {
+  color: $black;
+  outline: none;
+  border: 1px solid $primary-gray;
+  width: 100%;
+
+  &--focused {
+    border: 1px solid $primary;
+  }
+
+  &--disabled {
+    cursor: not-allowed;
+  }
+
+  &--error {
+    border: 1px solid red;
+  }
+}
+
+.error {
+  animation: errorFadein 0.3s ease-out;
+  color: red;
+}
+
+@keyframes errorFadein {
+  0% {
+    transform: translateY(-30%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}

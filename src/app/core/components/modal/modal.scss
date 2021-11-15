@@ -1,0 +1,13 @@
+@import 'core.scss';
+
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-content {
+  color: white;
+  border: 1px solid white;
+}

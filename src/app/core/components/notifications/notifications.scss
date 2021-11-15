@@ -1,0 +1,62 @@
+@import 'core.scss';
+
+.notification-container {
+  padding: 0;
+  color: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  z-index: 1010;
+  margin: 0 24px 0 0;
+  right: 0px;
+  top: auto;
+  bottom: 24px;
+}
+
+.notification {
+  position: relative;
+  width: 384px;
+  max-width: calc(100vw - 48px);
+  margin-bottom: 16px;
+  margin-left: auto;
+  overflow: hidden;
+  word-wrap: break-word;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  padding: 16px 24px;
+}
+
+.header {
+  @include flex($align: center, $justify: space-between);
+}
+
+.fade-in {
+  animation: notificationFadein 0.3s ease-out;
+}
+
+.fade-out {
+  animation: notificationFadeout 0.3s ease-out;
+}
+
+@keyframes notificationFadein {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes notificationFadeout {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}

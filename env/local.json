@@ -1,0 +1,5 @@
+{
+  "PORT": 8289,
+  "HOST": "localhost",
+  "APIURL": "http://localhost:8288/v1"
+}

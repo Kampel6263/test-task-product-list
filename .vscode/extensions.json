@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "streetsidesoftware.code-spell-checker",
+    "gruntfuggly.todo-tree",
+    "wayou.vscode-todo-highlight",
+    "dengsir.template-generator-vscode",
+    "hex-ci.stylelint-plus",
+    "cipchk.cssrem",
+    "esbenp.prettier-vscode",
+    "christian-kohler.path-intellisense",
+    "eg2.vscode-npm-script",
+    "xabikos.javascriptsnippets",
+    "ecmel.vscode-html-css",
+    "dbaeumer.vscode-eslint",
+    "usernamehw.errorlens",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}
