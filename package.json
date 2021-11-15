@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build:prod",
+    "deploy": "gh-pages -d build:prod",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:local": "cross-env NODE_ENV=local webpack serve --mode=development --config webpack.dev.js",
     "start:dev": "cross-env NODE_ENV=dev webpack serve --mode=development --config webpack.dev.js",
@@ -25,6 +27,7 @@
     "cross-env": "^7.0.3",
     "dayjs": "^1.10.4",
     "formik": "^2.2.6",
+    "gh-pages": "^3.2.3",
     "history": "^4.10.1",
     "object-path": "^0.11.5",
     "query-string": "^7.0.0",
